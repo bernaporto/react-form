@@ -1,0 +1,106 @@
+.app {
+  background: linear-gradient(45deg, #63d6dd, #e93bf4);
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+}
+
+form, label, .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+  color: slategray;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 25px 30px;
+  margin: 8px;
+}
+
+h3 {
+  color: darkslategray;
+  margin: 0 0 20px 0;
+}
+
+h3, p {
+  text-align: center;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+form {
+  min-width: 240px;
+}
+
+label {
+  position: relative;
+  font-weight: 500;
+  color: lightslategray;
+  font-size: 0.75rem;
+  padding-bottom: 17px;
+}
+
+label span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: rgb(255, 100, 100);
+  font-weight: normal;
+  font-size: 0.8rem;
+  align-self: flex-end;
+}
+
+input {
+  margin-top: 5px;
+  min-height: 25px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 2px 8px;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  box-shadow: 0 0 0px 1000px #EFEFEF inset;
+  -webkit-box-shadow: 0 0 0px 1000px #EFEFEF inset;
+}
+
+button {
+  align-self: flex-end;
+  min-height: 30px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bolder;
+  letter-spacing: 0.05rem;
+  background-color: #8da6e4;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:disabled {
+  background-color: lightgray;
+  opacity: 0.7;
+}
